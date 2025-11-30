@@ -16,6 +16,8 @@ import java.util.concurrent.Flow.Subscriber;
 
 
 
+
+
 public class AIConnector {
 
     
@@ -65,7 +67,9 @@ public class AIConnector {
         //resive a HttpResponse
         HttpResponse<String> response = null;
         try {
+            
             response = client.send(request, BodyHandlers.ofString());
+            System.out.println(response);
             responseBody = response.body();
         } catch (Exception e) {
             System.out.println("Error: " + e);
