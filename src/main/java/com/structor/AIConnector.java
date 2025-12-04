@@ -54,6 +54,7 @@ public class AIConnector {
         }
         
         return resp.replace("\\n", "\n");
+        //return this.responseBody;
     }
 
     public void OllamaConnect(){
